@@ -1,0 +1,32 @@
+ng-date-picker {
+  display: block;
+}
+
+
+.ng-date-picker-wrapper {
+  position: relative;
+}
+
+.ng-date-picker-wrapper input {
+  width: 100%;
+}
+
+.ng-date-picker-toggle-btn {
+  height: 100%;
+  width: 1em;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  left: 0.5em;
+  position: absolute;
+}
+
+.ng-date-picker-toggle-btn:focus {
+  outline: none;
+}
+
+.ng-date-picker-footer {
+  text-align: center;
+  padding: 5px;
+}

@@ -1,0 +1,11 @@
+<form ngForm #form="ngForm">
+  <ng-form-control label="code">
+    <input ngOnlyNumber type="text" name="testCode" class="hhh" kendoTextBox [(ngModel)]="testCode" >
+  </ng-form-control>
+  <ng-form-control label="number">
+    <ng-lookup ngOnlyNumber name="testNumber" [(ngModel)]="testNumber" valueField="code" textField="name">
+    </ng-lookup>
+  </ng-form-control>
+  <button type="button" (click)="emitEvent()">testBtn</button>
+  {{form.status}}
+</form>

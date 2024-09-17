@@ -1,0 +1,34 @@
+<nb-layout>
+  <nb-layout-header fixed>
+    <ng-portal-user-area-header></ng-portal-user-area-header>
+  </nb-layout-header>
+  <nb-sidebar class="menu-sidebar" tag="menu-sidebar" responsive>
+    <!-- <nb-sidebar-header>
+      <a href="#" class="btn btn-hero-success main-btn">
+        <i class="ion ion-social-github"></i>
+        <span>Support Us</span>
+      </a>
+    </nb-sidebar-header> -->
+    <ng-portal-user-area-sidebar></ng-portal-user-area-sidebar>
+  </nb-sidebar>
+  <nb-layout-column class="ng-page-content-wrapper">
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+  <nb-layout-footer fixed>
+    <ng-portal-user-area-footer style="width: 100%;"></ng-portal-user-area-footer>
+  </nb-layout-footer>
+</nb-layout>
+
+<!-- <div class="ng-page-wrapper">
+  <ng-portal-user-area-sidebar></ng-portal-user-area-sidebar>
+  <div class="ng-page-content-wrapper {{showSidebarClass}}">
+    <ng-portal-user-area-header></ng-portal-user-area-header>
+    <div class="ng-page-content">
+      <router-outlet ngRouterOutlet></router-outlet>
+      <div #contentArea style="position: relative;">
+      </div>
+    </div>
+   <ng-portal-user-area-footer></ng-portal-user-area-footer>
+  </div>
+</div> -->
+<!-- <div kendoWindowContainer></div>  -->

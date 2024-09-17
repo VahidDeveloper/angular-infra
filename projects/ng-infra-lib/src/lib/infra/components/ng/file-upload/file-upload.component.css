@@ -1,0 +1,30 @@
+ng-file-upload {
+  display: block;
+}
+
+.ng-file-upload-wrapper {
+  position: relative;
+}
+
+.ng-file-upload-wrapper input {
+  width: 100%;
+}
+
+.file-path {
+  cursor: pointer;
+}
+
+.ng-open-dialog-btn {
+  height: 100%;
+  width: 1em;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  left: 0.5em;
+  position: absolute;
+}
+
+.ng-open-dialog-btn:focus {
+  outline: none;
+}
