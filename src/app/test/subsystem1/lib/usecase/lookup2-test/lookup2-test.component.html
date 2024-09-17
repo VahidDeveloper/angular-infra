@@ -1,0 +1,47 @@
+<h3>lookup2:</h3>
+<!-- <ng-lookup2 [text]="xyz" [(ngModel)]="value" (popupConfirm)="conf($event)" (inputChange)="onInputChange($event)"  required>
+
+</ng-lookup2>
+
+{{value}} -->
+
+
+<ng-main-panel>
+    <form #f="ngForm" ngForm (do)="test($event)">
+        <ng-form-control label="label">
+          <ng-lookup [conditions]="[{key: 'type', value: 'COUNTRY', error: 'geoTypeMustBeCountry'}]" ngOnlyNumber [required]="true" name="sth" [(ngModel)]="data" valueField="code" textField="name">
+          <ng-modal-test (onSelectRow)="data = $event"></ng-modal-test>
+          </ng-lookup>
+        </ng-form-control>
+        NAME: {{data?.name}}
+        <button type="submit" (click)="data = {code: 111, name: 'asdasda'}">{{f.status}}</button>
+    </form>
+</ng-main-panel>
+
+==============================================
+
+<!-- <ng-main-panel [title]="'changePassword' | translator">
+    <form #form="ngForm" ngForm (do)="onSaveClick()">
+        <ng-row>
+            <ng-column [col_sm]='3'>
+                <ng-form-control labelKey="currentPassword">
+                    <input kendoTextBox name="oldPassword" type="password" [(ngModel)]="model.currentPassword"
+                        required />
+                </ng-form-control>
+
+                <ng-form-control labelKey="newPassword">
+                    <input kendoTextBox name="newPassword" type="password" [(ngModel)]="model.newPassword" required />
+                </ng-form-control>
+
+                <ng-form-control labelKey="confirmPassword">
+                    <input kendoTextBox name="confirmPassword" type="password" [(ngModel)]="model.confirmPassword"
+                        required  [equalWith]="model.newPassword" [inequalityMessage]="'inequalPassword' | translator" />
+                </ng-form-control>
+            </ng-column>
+        </ng-row>
+        <hr />
+        <button kendoButton type="submit" [icon]="'save'" [disabled]="form.invalid">
+            {{ "save" | translator }}
+        </button>
+    </form>
+</ng-main-panel> -->

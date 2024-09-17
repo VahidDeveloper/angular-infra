@@ -1,0 +1,13 @@
+<ng-main-panel title="{{'fee' | translator}}">
+    <form ngForm #form="ngForm">
+
+        <ng-row>
+            <ng-column col_md="4">
+
+                <ng-form-control labelKey='fee'>
+                    <input kendoTextBox name="fee" [(ngModel)]="fee" ngOnlyNumber>
+                </ng-form-control>
+            </ng-column>
+        </ng-row>
+    </form>
+</ng-main-panel>
